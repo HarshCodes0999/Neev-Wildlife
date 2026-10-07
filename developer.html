@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Developer | Neev Wildlife</title>
+
+    <meta
+        name="description"
+        content="Meet Harsh Vardhan Singh Chouhan, the developer behind the Neev Wildlife website."
+    >
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* =========================
+           DEVELOPER PAGE
+        ========================= */
+
+        .developer-page {
+            min-height: 100vh;
+            background:
+                linear-gradient(
+                    180deg,
+                    rgba(0, 0, 0, 0.28),
+                    rgba(0, 0, 0, 0.96)
+                ),
+                url("assets/Background.jpg") center / cover fixed;
+        }
+
+        .developer-hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 120px 7% 80px;
+        }
+
+        .developer-container {
+            width: 100%;
+            max-width: 1150px;
+            margin: 0 auto;
+        }
+
+        .developer-grid {
+            display: grid;
+            grid-template-columns: 0.85fr 1.15fr;
+            gap: 70px;
+            align-items: center;
+        }
+
+        /* PHOTO */
+
+        .developer-photo-wrapper {
+            display: flex;
+            justify-content: center;
+        }
+
+        .developer-photo {
+            width: min(100%, 420px);
+            height: auto;
+            display: block;
+            border: 1px solid rgba(255,255,255,0.16);
+            box-shadow:
+                0 30px 80px rgba(0,0,0,0.55);
+        }
+
+        /* TEXT */
+
+        .developer-label {
+            display: inline-block;
+            margin-bottom: 18px;
+            font-size: 0.78rem;
+            letter-spacing: 0.22em;
+            text-transform: uppercase;
+            color: rgba(255,255,255,0.62);
+        }
+
+        .developer-title {
+            margin: 0;
+            font-size: clamp(2.6rem, 6vw, 5.4rem);
+            line-height: 0.98;
+            letter-spacing: -0.04em;
+            color: #ffffff;
+        }
+
+        .developer-role {
+            margin-top: 22px;
+            font-size: 1.05rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: rgba(255,255,255,0.72);
+        }
+
+        .developer-intro {
+            max-width: 680px;
+            margin-top: 28px;
+            font-size: 1.08rem;
+            line-height: 1.9;
+            color: rgba(255,255,255,0.72);
+        }
+
+        /* SOCIAL LINKS */
+
+        .developer-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+            margin-top: 34px;
+        }
+
+        .developer-link {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 165px;
+            padding: 14px 20px;
+            border: 1px solid rgba(255,255,255,0.18);
+            background: rgba(255,255,255,0.055);
+            color: #ffffff;
+            text-decoration: none;
+            transition: 0.25s ease;
+        }
+
+        .developer-link:hover {
+            background: rgba(255,255,255,0.12);
+            border-color: rgba(255,255,255,0.38);
+            transform: translateY(-3px);
+        }
+
+        /* ABOUT SECTION */
+
+        .developer-about {
+            max-width: 1150px;
+            margin: 0 auto;
+            padding: 80px 7% 110px;
+        }
+
+        .developer-section-title {
+            margin: 0 0 22px;
+            font-size: clamp(2rem, 4vw, 3.2rem);
+            color: #ffffff;
+        }
+
+        .developer-about-text {
+            max-width: 850px;
+            font-size: 1.05rem;
+            line-height: 1.9;
+            color: rgba(255,255,255,0.68);
+        }
+
+        /* WEBSITE CREDIT */
+
+        .developer-credit {
+            margin-top: 55px;
+            padding: 35px;
+            border: 1px solid rgba(255,255,255,0.13);
+            background: rgba(0,0,0,0.28);
+        }
+
+        .developer-credit h3 {
+            margin: 0 0 12px;
+            color: #ffffff;
+            font-size: 1.25rem;
+        }
+
+        .developer-credit p {
+            margin: 0;
+            color: rgba(255,255,255,0.66);
+            line-height: 1.8;
+        }
+
+        /* SIGNATURE */
+
+        .developer-signature {
+            text-align: center;
+            padding: 90px 7% 100px;
+            border-top: 1px solid rgba(255,255,255,0.08);
+        }
+
+        .developer-signature-name {
+            margin: 0;
+            font-size: clamp(1.5rem, 4vw, 2.8rem);
+            letter-spacing: 0.08em;
+            color: #ffffff;
+        }
+
+        .developer-signature-text {
+            margin-top: 14px;
+            color: rgba(255,255,255,0.5);
+            font-style: italic;
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 850px) {
+
+            .developer-hero {
+                padding-top: 120px;
+            }
+
+            .developer-grid {
+                grid-template-columns: 1fr;
+                gap: 45px;
+            }
+
+            .developer-photo-wrapper {
+                order: 1;
+            }
+
+            .developer-content {
+                order: 2;
+                text-align: center;
+            }
+
+            .developer-intro {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .developer-links {
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 520px) {
+
+            .developer-hero {
+                padding-left: 6%;
+                padding-right: 6%;
+            }
+
+            .developer-photo {
+                width: 100%;
+            }
+
+            .developer-link {
+                width: 100%;
+            }
+
+            .developer-about {
+                padding-left: 6%;
+                padding-right: 6%;
+            }
+
+            .developer-credit {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="developer-page">
+
+    <!-- NAVIGATION -->
+
+    <header class="site-header">
+        <nav class="navbar">
+
+            <a href="index.html" class="logo">
+                NEEV WILDLIFE
+            </a>
+
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="author.html">Author</a>
+                <a href="developer.html" class="active">Developer</a>
+            </div>
+
+        </nav>
+    </header>
+
+
+    <!-- DEVELOPER HERO -->
+
+    <main>
+
+        <section class="developer-hero">
+
+            <div class="developer-container">
+
+                <div class="developer-grid">
+
+                    <!-- PHOTO -->
+
+                    <div class="developer-photo-wrapper">
+
+                        <img
+                            src="assets/Dev-Harsh.jpg"
+                            alt="Harsh Vardhan Singh Chouhan"
+                            class="developer-photo"
+                        >
+
+                    </div>
+
+
+                    <!-- INTRO -->
+
+                    <div class="developer-content">
+
+                        <span class="developer-label">
+                            Developer & Creator
+                        </span>
+
+                        <h1 class="developer-title">
+                            Harsh Vardhan<br>
+                            Singh Chouhan
+                        </h1>
+
+                        <div class="developer-role">
+                            Developer • Creator • Builder
+                        </div>
+
+                        <p class="developer-intro">
+                            I’m Harsh Vardhan Singh Chouhan, a developer and
+                            creator passionate about technology, AI, and building
+                            meaningful digital experiences.
+                        </p>
+
+                        <div class="developer-links">
+
+                            <a
+                                href="https://github.com/HarshCodes0999"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="developer-link"
+                            >
+                                GitHub ↗
+                            </a>
+
+                            <a
+                                href="https://instagram.com/harsh.exe_0999"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="developer-link"
+                            >
+                                Instagram ↗
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ABOUT DEVELOPER -->
+
+        <section class="developer-about">
+
+            <span class="developer-label">
+                About the Developer
+            </span>
+
+            <h2 class="developer-section-title">
+                Building ideas into reality.
+            </h2>
+
+            <p class="developer-about-text">
+                I enjoy turning ideas into real digital experiences — from
+                websites and software projects to AI systems and creative
+                technology. I believe that technology becomes meaningful when
+                it solves problems, tells stories, and creates something people
+                can actually connect with.
+            </p>
+
+
+            <!-- WEBSITE CREDIT -->
+
+            <div class="developer-credit">
+
+                <h3>
+                    This Website
+                </h3>
+
+                <p>
+                    Designed and developed by
+                    <strong>Harsh Vardhan Singh Chouhan</strong>
+                    for wildlife enthusiast and aspiring wildlife filmmaker
+                    <strong>Neev Inani</strong>.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- SIGNATURE -->
+
+        <section class="developer-signature">
+
+            <h2 class="developer-signature-name">
+                HARSH VARDHAN SINGH CHOUHAN
+            </h2>
+
+            <p class="developer-signature-text">
+                Building ideas into reality.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer class="site-footer">
+
+        <p>
+            © 2026 Neev Wildlife
+        </p>
+
+        <p>
+            Developed by
+            <strong>Harsh Vardhan Singh Chouhan</strong>
+        </p>
+
+    </footer>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

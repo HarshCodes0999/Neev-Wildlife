@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Neev Wildlife | TADOBA</title>
+
+    <meta
+        name="description"
+        content="Neev Wildlife presents TADOBA — The Land Of Roaring Tigers, written by Neev Inani."
+    >
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* =========================
+           BOOK SECTION
+        ========================== */
+
+        .featured-book {
+            padding: 110px 7%;
+        }
+
+        .featured-book-container {
+            max-width: 1150px;
+            margin: 0 auto;
+        }
+
+        .featured-book-grid {
+            display: grid;
+            grid-template-columns: 0.75fr 1.25fr;
+            gap: 75px;
+            align-items: center;
+        }
+
+        .book-cover-wrapper {
+            display: flex;
+            justify-content: center;
+        }
+
+        .book-cover {
+            width: min(100%, 390px);
+            height: auto;
+            display: block;
+            border: 1px solid rgba(255,255,255,0.14);
+            box-shadow:
+                0 30px 70px rgba(0,0,0,0.5);
+            transition: 0.3s ease;
+        }
+
+        .book-cover:hover {
+            transform: translateY(-6px);
+            box-shadow:
+                0 40px 90px rgba(0,0,0,0.65);
+        }
+
+        .book-label {
+            display: inline-block;
+            margin-bottom: 18px;
+            font-size: 0.75rem;
+            letter-spacing: 0.25em;
+            color: rgba(255,255,255,0.58);
+        }
+
+        .featured-book h2 {
+            margin: 0;
+            font-size: clamp(2.4rem, 5vw, 4.5rem);
+            line-height: 1;
+            color: #ffffff;
+        }
+
+        .book-subtitle {
+            margin-top: 16px;
+            font-size: 1.25rem;
+            font-style: italic;
+            color: rgba(255,255,255,0.78);
+        }
+
+        .book-author {
+            margin-top: 20px;
+            color: rgba(255,255,255,0.55);
+        }
+
+        .book-description {
+            max-width: 650px;
+            margin-top: 25px;
+            line-height: 1.9;
+            color: rgba(255,255,255,0.68);
+        }
+
+        .book-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 25px;
+        }
+
+        .book-meta span {
+            padding: 9px 14px;
+            border: 1px solid rgba(255,255,255,0.15);
+            background: rgba(255,255,255,0.04);
+            color: rgba(255,255,255,0.7);
+            font-size: 0.8rem;
+        }
+
+        .book-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+            margin-top: 32px;
+        }
+
+        .book-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 165px;
+            padding: 14px 22px;
+            text-decoration: none;
+            transition: 0.25s ease;
+        }
+
+        .book-button.primary {
+            background: #ffffff;
+            color: #000000;
+        }
+
+        .book-button.secondary {
+            border: 1px solid rgba(255,255,255,0.25);
+            color: #ffffff;
+            background: rgba(255,255,255,0.04);
+        }
+
+        .book-button:hover {
+            transform: translateY(-3px);
+        }
+
+        .book-button.secondary:hover {
+            background: rgba(255,255,255,0.1);
+        }
+
+
+        /* =========================
+           MOBILE
+        ========================== */
+
+        @media (max-width: 800px) {
+
+            .featured-book-grid {
+                grid-template-columns: 1fr;
+                gap: 50px;
+            }
+
+            .book-cover {
+                width: min(100%, 340px);
+            }
+
+            .featured-book-content {
+                text-align: center;
+            }
+
+            .book-description {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .book-meta,
+            .book-actions {
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 500px) {
+
+            .featured-book {
+                padding: 80px 6%;
+            }
+
+            .book-actions {
+                flex-direction: column;
+            }
+
+            .book-button {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <!-- =========================
+         NAVIGATION
+    ========================== -->
+
+    <header class="site-header">
+
+        <nav class="navbar">
+
+            <a href="index.html" class="logo">
+                NEEV WILDLIFE
+            </a>
+
+            <div class="nav-links">
+
+                <a href="index.html" class="active">
+                    Home
+                </a>
+
+                <a href="author.html">
+                    Author
+                </a>
+
+                <a href="developer.html">
+                    Developer
+                </a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- =========================
+         HERO
+    ========================== -->
+
+    <main>
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <span class="hero-label">
+                    WILDLIFE • NATURE • CONSERVATION
+                </span>
+
+                <h1>
+                    NEEV WILDLIFE
+                </h1>
+
+                <p class="hero-tagline">
+                    Exploring the wild. Telling its stories.
+                </p>
+
+                <p class="hero-description">
+                    Discover the beauty of India's wildlife, explore
+                    stories from the natural world, and discover the
+                    first book from Neev Wildlife.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#book" class="hero-button primary">
+                        Explore the Book
+                    </a>
+
+                    <a href="author.html" class="hero-button secondary">
+                        Meet the Author
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="hero-scroll">
+
+                <span>
+                    SCROLL TO EXPLORE
+                </span>
+
+                <span class="scroll-line"></span>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             FEATURED BOOK
+        ========================== -->
+
+        <section class="featured-book" id="book">
+
+            <div class="featured-book-container">
+
+                <div class="featured-book-grid">
+
+
+                    <!-- BOOK COVER -->
+
+                    <div class="book-cover-wrapper">
+
+                        <img
+                            src="assets/Book-Cover.jpg"
+                            alt="TADOBA - The Land Of Roaring Tigers book cover"
+                            class="book-cover"
+                        >
+
+                    </div>
+
+
+                    <!-- BOOK INFORMATION -->
+
+                    <div class="featured-book-content">
+
+                        <span class="book-label">
+                            FEATURED BOOK
+                        </span>
+
+                        <h2>
+                            TADOBA
+                        </h2>
+
+                        <p class="book-subtitle">
+                            The Land Of Roaring Tigers
+                        </p>
+
+                        <p class="book-author">
+                            Written by <strong>Neev Inani</strong>
+                        </p>
+
+                        <p class="book-description">
+                            Step into the wild and explore the world of
+                            Tadoba — a land shaped by forests, wildlife,
+                            and the roar of the tiger.
+                        </p>
+
+                        <div class="book-meta">
+
+                            <span>
+                                42 Pages
+                            </span>
+
+                            <span>
+                                Wildlife
+                            </span>
+
+                            <span>
+                                Tadoba
+                            </span>
+
+                        </div>
+
+                        <div class="book-actions">
+
+                            <a
+                                href="Todoba.pdf"
+                                target="_blank"
+                                class="book-button primary"
+                            >
+                                Read Book ↗
+                            </a>
+
+                            <a
+                                href="author.html"
+                                class="book-button secondary"
+                            >
+                                About the Author
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             INTRODUCTION
+        ========================== -->
+
+        <section class="intro-section">
+
+            <div class="section-container">
+
+                <span class="section-label">
+                    THE JOURNEY
+                </span>
+
+                <h2>
+                    Closer to the wild.
+                </h2>
+
+                <p>
+                    Neev Wildlife is a journey into the natural world —
+                    discovering animals, forests, ecosystems, and the
+                    stories that make India's wilderness extraordinary.
+                </p>
+
+                <p>
+                    Through wildlife writing, photography, filmmaking,
+                    and creative projects, the goal is simple:
+                    <strong>to make people care about the wild.</strong>
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             AUTHOR
+        ========================== -->
+
+        <section class="author-preview">
+
+            <div class="section-container author-preview-grid">
+
+                <div>
+
+                    <span class="section-label">
+                        THE AUTHOR
+                    </span>
+
+                    <h2>
+                        Meet Neev Inani.
+                    </h2>
+
+                    <p>
+                        A young wildlife enthusiast, nature lover, and
+                        aspiring wildlife filmmaker from India.
+                    </p>
+
+                    <p>
+                        His fascination with wild animals and their
+                        natural habitats inspires him to learn, explore,
+                        photograph, and create stories about India's
+                        incredible wildlife.
+                    </p>
+
+                    <a href="author.html" class="text-link">
+                        Discover Neev's story →
+                    </a>
+
+                </div>
+
+
+                <div class="author-preview-image">
+
+                    <img
+                        src="assets/Neev.jpg"
+                        alt="Neev Inani"
+                    >
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CONSERVATION
+        ========================== -->
+
+        <section class="conservation-section">
+
+            <div class="section-container">
+
+                <span class="section-label">
+                    CONSERVATION
+                </span>
+
+                <h2>
+                    Protecting the wild means
+                    protecting our future.
+                </h2>
+
+                <p>
+                    Wildlife conservation is not only about saving
+                    animals. It is about protecting forests, ecosystems,
+                    biodiversity, and the natural balance that supports
+                    life on our planet.
+                </p>
+
+                <p>
+                    Every story that creates awareness can become a
+                    reason for someone to care.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             VISION
+        ========================== -->
+
+        <section class="vision-section">
+
+            <div class="section-container">
+
+                <span class="section-label">
+                    THE VISION
+                </span>
+
+                <h2>
+                    Make people care about
+                    the wild before it is too late.
+                </h2>
+
+                <p>
+                    Neev Wildlife aims to bring people closer to nature
+                    through stories, exploration, photography, filmmaking,
+                    and creative work.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             DEVELOPER
+        ========================== -->
+
+        <section class="developer-preview">
+
+            <div class="section-container">
+
+                <span class="section-label">
+                    WEBSITE
+                </span>
+
+                <h2>
+                    Built with passion.
+                </h2>
+
+                <p>
+                    This website was designed and developed by
+                    <strong>Harsh Vardhan Singh Chouhan</strong>
+                    for Neev Wildlife.
+                </p>
+
+                <a href="developer.html" class="text-link">
+                    Meet the Developer →
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="site-footer">
+
+        <div>
+
+            <strong>
+                NEEV WILDLIFE
+            </strong>
+
+            <p>
+                Exploring the wild. Telling its stories.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <p>
+                © 2026 Neev Wildlife
+            </p>
+
+            <p>
+                Developed by
+                <strong>
+                    Harsh Vardhan Singh Chouhan
+                </strong>
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

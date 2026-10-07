@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="About Neev Inani — Wildlife Enthusiast, Nature Lover, Writer and Aspiring Wildlife Filmmaker.">
+
+    <title>About the Author | Neev Inani</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+        /* =========================================
+           AUTHOR PAGE
+        ========================================= */
+
+        .author-page {
+            padding-top: 120px;
+            background: #0a0b09;
+        }
+
+        .author-hero {
+            min-height: 75vh;
+
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            align-items: center;
+
+            gap: 80px;
+
+            padding: 90px 8%;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    rgba(0,0,0,0.75),
+                    rgba(0,0,0,0.25)
+                ),
+                url("assets/Background.jpg");
+
+            background-size: cover;
+            background-position: center;
+        }
+
+        .author-heading {
+            max-width: 700px;
+        }
+
+        .author-heading h1 {
+            font-size: clamp(55px, 8vw, 110px);
+
+            font-weight: 400;
+
+            line-height: 0.95;
+
+            letter-spacing: -4px;
+
+            margin-bottom: 25px;
+        }
+
+        .author-heading h1 em {
+            color: #d8d2c1;
+        }
+
+        .author-heading p {
+            max-width: 520px;
+
+            font-size: 18px;
+
+            line-height: 1.8;
+
+            color: rgba(255,255,255,0.65);
+        }
+
+
+        /* =========================================
+           AUTHOR IMAGE
+        ========================================= */
+
+        .author-image-wrapper {
+            display: flex;
+            justify-content: center;
+        }
+
+        .author-image {
+    width: min(100%, 430px);
+
+    height: auto;
+
+    display: block;
+
+    border: 1px solid rgba(255,255,255,0.15);
+
+    filter: saturate(0.9);
+}
+
+
+        /* =========================================
+           AUTHOR STORY
+        ========================================= */
+
+        .author-story {
+            padding: 140px 8%;
+        }
+
+        .author-story-container {
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .author-story h2 {
+            font-size: clamp(42px, 6vw, 75px);
+
+            font-weight: 400;
+
+            line-height: 1.05;
+
+            letter-spacing: -2px;
+
+            margin-bottom: 55px;
+        }
+
+        .author-story h2 em {
+            color: #c9c2ad;
+        }
+
+        .author-text {
+            display: grid;
+            gap: 28px;
+        }
+
+        .author-text p {
+            font-size: 18px;
+
+            line-height: 2;
+
+            color: rgba(255,255,255,0.68);
+        }
+
+
+        /* =========================================
+           AUTHOR QUOTE
+        ========================================= */
+
+        .author-quote {
+            padding: 130px 8%;
+
+            background: #10120f;
+
+            text-align: center;
+        }
+
+        .author-quote blockquote {
+            max-width: 900px;
+
+            margin: auto;
+
+            font-size: clamp(30px, 5vw, 60px);
+
+            font-weight: 400;
+
+            line-height: 1.2;
+
+            letter-spacing: -1px;
+        }
+
+        .author-quote span {
+            display: block;
+
+            margin-top: 30px;
+
+            font-family: Arial, Helvetica, sans-serif;
+
+            font-size: 10px;
+
+            letter-spacing: 3px;
+
+            color: rgba(255,255,255,0.4);
+
+            text-transform: uppercase;
+        }
+
+
+        /* =========================================
+           AUTHOR PAGE MOBILE
+        ========================================= */
+
+        @media (max-width: 800px) {
+
+            .author-hero {
+                grid-template-columns: 1fr;
+
+                gap: 60px;
+
+                padding-top: 80px;
+            }
+
+            .author-image-wrapper {
+                order: -1;
+            }
+
+            .author-image {
+                width: min(100%, 360px);
+            }
+
+        }
+
+
+        @media (max-width: 560px) {
+
+            .author-page {
+                padding-top: 90px;
+            }
+
+            .author-hero {
+                padding: 70px 7% 90px;
+
+                min-height: auto;
+            }
+
+            .author-heading h1 {
+                font-size: clamp(55px, 17vw, 85px);
+
+                letter-spacing: -3px;
+            }
+
+            .author-heading p {
+                font-size: 15px;
+            }
+
+            .author-story {
+                padding: 90px 7%;
+            }
+
+            .author-story h2 {
+                margin-bottom: 40px;
+            }
+
+            .author-text p {
+                font-size: 15px;
+
+                line-height: 1.9;
+            }
+
+            .author-quote {
+                padding: 90px 7%;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================================
+         NAVIGATION
+    ========================================== -->
+
+    <header class="navbar">
+
+        <a href="index.html" class="logo">
+            NEEV INANI
+        </a>
+
+        <nav class="nav-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="author.html" class="active">
+                Author
+            </a>
+
+            <a href="developer.html">
+                Developer
+            </a>
+
+        </nav>
+
+    </header>
+
+
+
+    <main class="author-page">
+
+
+        <!-- =====================================
+             AUTHOR HERO
+        ====================================== -->
+
+        <section class="author-hero">
+
+            <div class="author-heading">
+
+                <p class="section-label">
+                    ABOUT THE AUTHOR
+                </p>
+
+                <h1>
+                    Neev<br>
+                    <em>Inani</em>
+                </h1>
+
+                <p>
+                    Wildlife enthusiast. Nature lover.
+                    Writer. Aspiring wildlife filmmaker.
+                </p>
+
+            </div>
+
+
+            <div class="author-image-wrapper">
+
+                <img
+                    src="assets/Neev.jpg"
+                    alt="Neev Inani"
+                    class="author-image"
+                >
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================
+             AUTHOR STORY
+        ====================================== -->
+
+        <section class="author-story">
+
+            <div class="author-story-container">
+
+                <p class="section-label">
+                    HIS STORY
+                </p>
+
+                <h2>
+                    A life inspired<br>
+                    by the <em>wild.</em>
+                </h2>
+
+
+                <div class="author-text">
+
+                    <p>
+                        Neev Inani is a young wildlife enthusiast,
+                        nature lover, and aspiring wildlife filmmaker
+                        from India. His fascination with wild animals
+                        and their natural habitats has inspired him to
+                        learn, explore, photograph, and create stories
+                        about India’s incredible wildlife.
+                    </p>
+
+
+                    <p>
+                        Through his books and creative projects,
+                        Neev aims to bring people closer to nature
+                        and spread awareness about the importance
+                        of wildlife conservation. He believes that
+                        protecting wildlife is not only about saving
+                        animals—it is about protecting forests,
+                        ecosystems, and the future of our planet.
+                    </p>
+
+
+                    <p>
+                        His work is driven by curiosity, passion,
+                        and a simple goal: to make people care about
+                        the wild before it is too late.
+                    </p>
+
+
+                    <p>
+                        This book is a part of that journey.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================
+             QUOTE
+        ====================================== -->
+
+        <section class="author-quote">
+
+            <blockquote>
+                “To make people care about the wild
+                before it is too late.”
+            </blockquote>
+
+            <span>
+                Neev Inani
+            </span>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
+
+    <footer>
+
+        <div class="footer-logo">
+            NEEV INANI
+        </div>
+
+        <p>
+            Wildlife Writer • Nature Lover • Storyteller
+        </p>
+
+        <div class="footer-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="author.html">
+                Author
+            </a>
+
+            <a href="developer.html">
+                Developer
+            </a>
+
+        </div>
+
+        <p class="copyright">
+            © 2026 Neev Inani. All rights reserved.
+        </p>
+
+        <p class="developer-credit">
+            Website designed & developed by
+            <strong>Harsh Vardhan Singh Chouhan</strong>
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
